@@ -37,7 +37,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="AAAAAA"
+                    android:text="AAAAAA1"
                     android:textAlignment="center" />
             </LinearLayout>
 
@@ -51,11 +51,11 @@
 
                 <EditText
                     android:id="@+id/et_IngresoEjercicio3"
-                    android:layout_width="240dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="255dp"
+                    android:layout_height="58dp"
                     android:hint="aaaaaaaaa"
                     android:inputType="text"
-                    android:textAlignment="center"/>
+                    android:textAlignment="center" />
             </LinearLayout>
 
             <!-- Third Row -->
@@ -100,11 +100,11 @@
 
                 <EditText
                     android:id="@+id/et_ResultadoEjercicio3"
-                    android:layout_width="240dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="255dp"
+                    android:layout_height="58dp"
+                    android:focusable="false"
                     android:hint="aaaaaaaaa"
-                    android:textAlignment="center"
-                    android:focusable="false"/>
+                    android:textAlignment="center" />
             </LinearLayout>
         </LinearLayout>
 
@@ -127,7 +127,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="AAAAAA"
+                    android:text="AAAAAA2"
                     android:textAlignment="center" />
             </LinearLayout>
 
@@ -141,8 +141,8 @@
 
                 <EditText
                     android:id="@+id/et_IngresoEjercicio4"
-                    android:layout_width="240dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="255dp"
+                    android:layout_height="58dp"
                     android:hint="aaaaaaaaa"
                     android:inputType="text"
                     android:textAlignment="center"/>
@@ -190,8 +190,8 @@
 
                 <EditText
                     android:id="@+id/et_ResultadoEjercicio4"
-                    android:layout_width="240dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="255dp"
+                    android:layout_height="58dp"
                     android:hint="aaaaaaaaa"
                     android:textAlignment="center"
                     android:focusable="false"/>
@@ -216,7 +216,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="AAAAAA"
+                    android:text="AAAAAA3"
                     android:textAlignment="center" />
             </LinearLayout>
 
@@ -230,8 +230,8 @@
 
                 <EditText
                     android:id="@+id/et_IngresoEjercicio5"
-                    android:layout_width="240dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="255dp"
+                    android:layout_height="58dp"
                     android:hint="aaaaaaaaa"
                     android:inputType="text"
                     android:textAlignment="center"/>
@@ -278,12 +278,27 @@
                 android:gravity="center">
 
                 <EditText
-                    android:id="@+id/et_ResultadoEjercicio5"
-                    android:layout_width="240dp"
-                    android:layout_height="wrap_content"
+                    android:id="@+id/et_ResultadoEjercicio5Grados"
+                    android:layout_width="58dp"
+                    android:layout_height="58dp"
                     android:hint="aaaaaaaaa"
                     android:textAlignment="center"
                     android:focusable="false"/>
+                <EditText
+                    android:id="@+id/et_ResultadoEjercicio5Sexagesimales"
+                    android:layout_width="58dp"
+                    android:layout_height="58dp"
+                    android:hint="aaaaaaaaa"
+                    android:textAlignment="center"
+                    android:focusable="false"/>
+                <EditText
+                    android:id="@+id/et_ResultadoEjercicio5Centesimales"
+                    android:layout_width="58dp"
+                    android:layout_height="58dp"
+                    android:hint="aaaaaaaaa"
+                    android:textAlignment="center"
+                    android:focusable="false"/>
+
             </LinearLayout>
         </LinearLayout>
     </ViewFlipper>
@@ -328,10 +343,10 @@
 
     <Button
         android:id="@+id/btn_Regresar"
-        android:layout_width="66dp"
-        android:layout_height="64dp"
-        android:text="<"
-        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="57dp"
+        android:text="Regresar"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.046"
