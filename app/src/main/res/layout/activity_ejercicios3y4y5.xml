@@ -216,11 +216,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="AAAAAA3"
-                    android:textAlignment="center" />
+                    android:text="Conversión del Ángulo en Radianes"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
             </LinearLayout>
 
-            <!-- Second Row -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -232,12 +233,11 @@
                     android:id="@+id/et_IngresoEjercicio5"
                     android:layout_width="255dp"
                     android:layout_height="58dp"
-                    android:hint="aaaaaaaaa"
-                    android:inputType="text"
-                    android:textAlignment="center"/>
+                    android:hint="Ingrese el ángulo en radianes..."
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center" />
             </LinearLayout>
 
-            <!-- Third Row -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -249,10 +249,10 @@
                     android:id="@+id/btn_AccionEjercicio5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="aaaaa" />
+                    android:text="Convertir"
+                    android:onClick="convertirAngulo"/>
             </LinearLayout>
 
-            <!-- Fourth Row -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -264,41 +264,62 @@
                     android:id="@+id/et_Subtitulo2Ejercicio5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="AAAAAA"
+                    android:text="Resultados"
                     android:textAlignment="center"
-                    android:gravity="center" />
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
             </LinearLayout>
 
-            <!-- Fifth Row -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:orientation="horizontal"
+                android:orientation="vertical"
                 android:gravity="center">
 
-                <EditText
-                    android:id="@+id/et_ResultadoEjercicio5Grados"
-                    android:layout_width="58dp"
-                    android:layout_height="58dp"
-                    android:hint="aaaaaaaaa"
-                    android:textAlignment="center"
-                    android:focusable="false"/>
-                <EditText
-                    android:id="@+id/et_ResultadoEjercicio5Sexagesimales"
-                    android:layout_width="58dp"
-                    android:layout_height="58dp"
-                    android:hint="aaaaaaaaa"
-                    android:textAlignment="center"
-                    android:focusable="false"/>
-                <EditText
-                    android:id="@+id/et_ResultadoEjercicio5Centesimales"
-                    android:layout_width="58dp"
-                    android:layout_height="58dp"
-                    android:hint="aaaaaaaaa"
-                    android:textAlignment="center"
-                    android:focusable="false"/>
-
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/tv_Sexagesimales"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sexagesimales: "
+                        android:textAlignment="center"
+                        android:gravity="center" />
+                    <EditText
+                        android:id="@+id/et_ResultadoEjercicio5Sexagesimales"
+                        android:layout_width="200dp"
+                        android:layout_height="58dp"
+                        android:hint="Grado Sexagesimal..."
+                        android:textAlignment="center"
+                        android:focusable="false"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/tv_Centesimales"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Centesimales: "
+                        android:textAlignment="center"
+                        android:gravity="center" />
+                    <EditText
+                        android:id="@+id/et_ResultadoEjercicio5Centesimales"
+                        android:layout_width="200dp"
+                        android:layout_height="58dp"
+                        android:hint="Grado Sexagesimal..."
+                        android:textAlignment="center"
+                        android:focusable="false"/>
+                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
     </ViewFlipper>
@@ -352,7 +373,8 @@
         app:layout_constraintHorizontal_bias="0.046"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
+        app:layout_constraintVertical_bias="0.023"
+        android:onClick="regresar"/>
 
     <TextView
         android:id="@+id/tv_TituloEjercicio3y4y5"
@@ -369,7 +391,3 @@
         app:layout_constraintVertical_bias="0.138" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
-
