@@ -34,11 +34,12 @@
 
                 <TextView
                     android:id="@+id/et_SubtituloEjercicio3"
-                    android:layout_width="wrap_content"
+                    android:layout_width="272dp"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="AAAAAA1"
-                    android:textAlignment="center" />
+                    android:text="Comprobar si una palabra es palíndrma"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
             </LinearLayout>
 
             <!-- Second Row -->
@@ -53,7 +54,7 @@
                     android:id="@+id/et_IngresoEjercicio3"
                     android:layout_width="255dp"
                     android:layout_height="58dp"
-                    android:hint="aaaaaaaaa"
+                    android:hint="Ingrese la palabra"
                     android:inputType="text"
                     android:textAlignment="center" />
             </LinearLayout>
@@ -70,7 +71,8 @@
                     android:id="@+id/btn_AccionEjercicio3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="aaaaa" />
+                    android:onClick="palindromo"
+                    android:text="Comprobar" />
             </LinearLayout>
 
             <!-- Fourth Row -->
@@ -85,9 +87,10 @@
                     android:id="@+id/et_Subtitulo2Ejercicio3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="AAAAAA"
+                    android:gravity="center"
+                    android:text="Resultado"
                     android:textAlignment="center"
-                    android:gravity="center" />
+                    android:textSize="20sp" />
             </LinearLayout>
 
             <!-- Fifth Row -->
@@ -103,7 +106,7 @@
                     android:layout_width="255dp"
                     android:layout_height="58dp"
                     android:focusable="false"
-                    android:hint="aaaaaaaaa"
+                    android:hint="resultado"
                     android:textAlignment="center" />
             </LinearLayout>
         </LinearLayout>
@@ -127,8 +130,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="AAAAAA2"
-                    android:textAlignment="center" />
+                    android:text="Determinar si un número es copicuo"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
             </LinearLayout>
 
             <!-- Second Row -->
@@ -143,8 +147,8 @@
                     android:id="@+id/et_IngresoEjercicio4"
                     android:layout_width="255dp"
                     android:layout_height="58dp"
-                    android:hint="aaaaaaaaa"
-                    android:inputType="text"
+                    android:hint="Ingrese el número"
+                    android:inputType="number"
                     android:textAlignment="center"/>
             </LinearLayout>
 
@@ -160,7 +164,8 @@
                     android:id="@+id/btn_AccionEjercicio4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="aaaaa" />
+                    android:onClick="copicuo"
+                    android:text="Comprobar" />
             </LinearLayout>
 
             <!-- Fourth Row -->
@@ -175,9 +180,10 @@
                     android:id="@+id/et_Subtitulo2Ejercicio4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="AAAAAA"
+                    android:text="Resultado"
                     android:textAlignment="center"
-                    android:gravity="center" />
+                    android:gravity="center"
+                    android:textSize="20sp" />
             </LinearLayout>
 
             <!-- Fifth Row -->
@@ -192,7 +198,7 @@
                     android:id="@+id/et_ResultadoEjercicio4"
                     android:layout_width="255dp"
                     android:layout_height="58dp"
-                    android:hint="aaaaaaaaa"
+                    android:hint="Resultado"
                     android:textAlignment="center"
                     android:focusable="false"/>
             </LinearLayout>
